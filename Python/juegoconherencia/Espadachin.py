@@ -12,7 +12,7 @@ class Espadachin(Personaje):
         return nuevoLadron
     
     def atacar(self, objetivo, dano: int):
-        if random.randint(0,1) == 1:
+        if random.randint(0,2) == 1:
             dano = self.__habilidad_especial__(dano)
         super().atacar(objetivo, dano)
     

@@ -14,7 +14,7 @@ class Mago(Personaje):
         return nuevoMago
     
     def recibir_dano(self, dano: int):
-        if random.randint(0,1) == 1:
+        if random.randint(0,2) == 1:
             dano = self.__habilidad_especial__(dano)
         super().recibir_dano(dano)
         
