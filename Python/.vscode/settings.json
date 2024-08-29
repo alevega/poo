@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./P3ej10/modelo"
+    ]
+}
