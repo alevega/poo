@@ -1,8 +1,5 @@
 package controlador;
 
-
-
-
 import modelo.Persona;
 import vista.Vista;
 

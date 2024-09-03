@@ -13,7 +13,7 @@ public abstract class Personal {
 		this.antiguedad = antiguedad;
 		this.sector = sector;
 		this.horas_trabajadas = 0;
-		this.cumplio = 
+		this.cumplio = false;
 	}
 	
 	public abstract void set_horas_trabajadas();
