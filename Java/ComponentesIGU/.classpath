@@ -5,7 +5,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry excluding="assets/" kind="src" path="src"/>
-	<classpathentry kind="src" path="src/assets"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="assets"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

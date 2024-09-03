@@ -1,3 +1,4 @@
+import controlador.ControllerBotones;
 import modelo.Dialogo;
 
 public class main {
@@ -10,6 +11,7 @@ public class main {
 		//dialogo.dialogoConOpciones();
 		//dialogo.dailogoConInput();
 		
+		new ControllerBotones();
 		
 	}
 
