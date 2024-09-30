@@ -1,5 +1,8 @@
 package controlador;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import modelo.Persona;
 import vista.Vista;
 
@@ -19,7 +22,10 @@ public class Cpersona{
 				this.vista.setMensaje("No entro al sistema");
 			}
 		});
+		
 	}
+	
+	
 	
 	
 	

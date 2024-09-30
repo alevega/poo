@@ -14,13 +14,14 @@ public class main {
 		dialogo.dialogoConOpciones();
 		dialogo.dailogoConInput();
 		*/
+	
 		
 		/*
 		 * Aca van a poder ver un ejemplo de botones usando mvc
 		new ControllerBotones();
 		*/
-		
-		new ControllerCheck();
+		new ControllerBotones();
+		//new ControllerCheck();
 	}
 
 }

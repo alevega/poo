@@ -21,7 +21,7 @@ public class Dialogo {
 	}
 	
 	public void dialogPersonalizado() {
-		JOptionPane.showMessageDialog(null, "Los huevos no deben ser verdes","titulo personalizado", JOptionPane.PLAIN_MESSAGE);
+		JOptionPane.showMessageDialog(null, "Los huevos no deben ser verdes","titulo personalizado", JOptionPane.ERROR_MESSAGE);
 		/*
 		 * JOptionPane.WARNING_MESSAGE Icono de advertencia
 		 * JOptionPane.ERROR_MESSAGE Icono de error

@@ -7,5 +7,10 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="assets"/>
+	<classpathentry kind="lib" path="assets/commons-logging-api.jar"/>
+	<classpathentry kind="lib" path="assets/jl1.0.jar"/>
+	<classpathentry kind="lib" path="assets/mp3spi1.9.4.jar"/>
+	<classpathentry kind="lib" path="assets/tritonus_share.jar"/>
+	<classpathentry kind="lib" path="assets/basicplayer3.0-robo.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
