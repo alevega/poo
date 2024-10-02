@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-21">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="flatlaf-3.5.1.jar"/>
+	<classpathentry kind="lib" path="postgresql-42.7.4.jar"/>
+	<classpathentry kind="lib" path="commons-codec-1.17.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
