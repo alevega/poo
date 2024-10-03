@@ -18,19 +18,8 @@ public class UsuarioModel {
 	 */
 	
 	public Boolean login(String usuario, String pass) {
-		DataBase conexion = DataBase.getInstance();
-		String query = "SELECT * FROM usuario WHERE usuario = '"+usuario+"' AND password = '"+DigestUtils.md5Hex(pass)+"'";
-		ResultSet result = conexion.query(query);
-		try {
-			if (result.next()) {
-				this.nombre = result.getString(2);
-				this.apellido = result.getString(3);
-				return true;
-			}else return false;
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		return true;
+		UsuarioDao usdao = new UsuarioDao();
+		return usdao.login(usuario, pass);
 	}
 	
 	public ArrayList<Object []> allUsuarios() {
@@ -48,6 +37,11 @@ public class UsuarioModel {
 			e.printStackTrace();
 		}
 		return array;
+	}
+	
+	public Boolean agregarUsuario(String nombre, String apellido, String usuario, String pass) {
+		UsuarioDao usdao = new UsuarioDao();
+		return usdao.agregar(nombre, apellido, usuario, pass);
 	}
 	
 

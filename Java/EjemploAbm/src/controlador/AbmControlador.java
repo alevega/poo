@@ -15,6 +15,11 @@ public class AbmControlador {
 		this.modelo = new UsuarioModel();
 		this.iniciarTabla();
 		this.vista.setVisible(true);
+		
+		this.vista.getBtnAgregarUsuario().addActionListener(e->{
+			this.vista.setVisible(false);
+			new AgregarUsuarioControlador();
+		});
 	}
 	
 	private void iniciarTabla() {

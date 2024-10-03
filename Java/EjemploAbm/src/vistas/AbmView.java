@@ -6,6 +6,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.JTable;
 import javax.swing.JScrollPane;
+import javax.swing.JButton;
 
 public class AbmView extends JFrame {
 
@@ -13,6 +14,7 @@ public class AbmView extends JFrame {
 	private JPanel contentPane;
 	private DefaultTableModel modeloTabla;
 	private JTable table;
+	private JButton btnAgregarUsuario;
 
 	public AbmView() {
 		setTitle("ABM Usuario");
@@ -41,6 +43,10 @@ public class AbmView extends JFrame {
 		table = new JTable(modeloTabla);
 		scrollPane.setViewportView(table);
 		
+		btnAgregarUsuario = new JButton("Agregar Usuario");
+		btnAgregarUsuario.setBounds(512, 44, 133, 23);
+		contentPane.add(btnAgregarUsuario);
+		
 	}
 
 	public DefaultTableModel getModeloTabla() {
@@ -51,5 +57,7 @@ public class AbmView extends JFrame {
 		this.modeloTabla = modeloTabla;
 	}
 	
-	
+	public JButton getBtnAgregarUsuario() {
+		return this.btnAgregarUsuario;
+	}
 }

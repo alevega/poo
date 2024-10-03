@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Properties;
 
 public class DataBase {
@@ -43,6 +44,21 @@ public class DataBase {
 				e.printStackTrace();
 			}
 			return rs;
+		}	
+		
+		public Boolean insert(String query) {
+			try {
+				Statement statement = getConnection().createStatement();
+				//executeUpdate es para realizar insert, update o delete, esto devuelve 1 
+				int res1 =statement.executeUpdate(query);
+				if(res1 == 1) {
+					return true;
+				}
+				return false;
+			} catch (SQLException e) {
+				e.printStackTrace();
+				return false;
+			}
 		}	
 
 		public static DataBase getInstance() {
