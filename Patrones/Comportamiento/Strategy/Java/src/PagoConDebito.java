@@ -7,6 +7,6 @@ public class PagoConDebito implements EstrategiaDePago {
 
     @Override
     public void pagar(double monto) {
-        System.out.println("Pagando " + monto + " usando PayPal. Email: " + email);
+        System.out.println("Pagando " + monto + " usando Debito. Email: " + email);
     }
 }

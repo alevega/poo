@@ -11,7 +11,7 @@ tienda.pagar(100.0)
 
 print()
 
-# Usar la estrategia de pago con PayPal (Débito)
+# Usar la estrategia de pago con Debito (Débito)
 tienda.set_estrategia_de_pago(PagoConDebito("juan.perez@example.com"))
 tienda.pagar(150.0)
 

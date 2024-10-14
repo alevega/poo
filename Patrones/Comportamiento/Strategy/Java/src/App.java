@@ -8,7 +8,7 @@ public class App {
 
         System.out.println();
 
-        // Usar la estrategia de pago con PayPal
+        // Usar la estrategia de pago con Debito
         tienda.setEstrategiaDePago(new PagoConDebito("juan.perez@example.com"));
         tienda.pagar(150.0);
 
