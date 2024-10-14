@@ -1,6 +1,7 @@
+from abc import ABC, abstractmethod
 from Casa import Casa
 
-class ConstructorDeCasa:
+class ConstructorDeCasa(ABC):
     def __init__(self):
         self._casa = None
 
@@ -10,20 +11,26 @@ class ConstructorDeCasa:
     def crear_nueva_casa(self, nombre):
         self._casa = Casa(nombre)
 
+    @abstractmethod
     def construir_cimientos(self):
-        raise NotImplementedError
+        pass
 
+    @abstractmethod
     def construir_estructura(self):
-        raise NotImplementedError
+        pass
 
+    @abstractmethod
     def construir_techo(self):
-        raise NotImplementedError
+        pass
 
+    @abstractmethod
     def construir_garage(self):
-        raise NotImplementedError
+        pass
 
+    @abstractmethod
     def construir_piscina(self):
-        raise NotImplementedError
+        pass
 
+    @abstractmethod
     def construir_jardin(self):
-        raise NotImplementedError
+        pass
