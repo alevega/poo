@@ -24,4 +24,7 @@ class Controlador_abm:
     
     def __agregar_view(self):
         self.__vista.get_ventana().withdraw()
-        Controlador_agregar(self.__vista)
+        Controlador_agregar(self)
+    
+    def get_vista(self):
+        return self.__vista

@@ -17,8 +17,8 @@ class Database(metaclass=DataBaseMeta):
     
     def __init__(self):
         try:
-            load_dotenv('poo\Python\EjemploAbm\.env')
-            self.conexion = psycopg2.connect(host=os.getenv('host'), port=os.getenv('port'), database=os.getenv('base'), user=os.getenv('user'), password=os.getenv('passw'))
+            load_dotenv('.env')
+            self.conexion = psycopg2.connect(host='localhost', port=5434, database='abm', user='postgres', password='postgres')
             print('Conexion exitosa')
         except (Exception, psycopg2.DatabaseError) as error:
             print(error)

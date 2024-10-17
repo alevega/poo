@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import modelo.Persona;
 import vista.Vista;
 
-public class Cpersona{
+public class Cpersona {
 
 	private Vista vista;
 	
@@ -22,6 +22,8 @@ public class Cpersona{
 				this.vista.setMensaje("No entro al sistema");
 			}
 		});
+		
+	
 		
 	}
 	

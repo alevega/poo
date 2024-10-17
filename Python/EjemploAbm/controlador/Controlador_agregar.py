@@ -3,8 +3,8 @@ from modelo.Usuario import Usuario
 
 class Controlador_agregar:
     
-    def __init__(self, vista_anterior):
-        self.__vista_anterior = vista_anterior
+    def __init__(self, controlador_anterior):
+        self.__controlador_anterior = controlador_anterior
         self.__vista = Agregar_view()
         self.__usuario = Usuario()
         self.__vista.get_btn_agregar().configure(command = self.__agregar)
@@ -18,4 +18,4 @@ class Controlador_agregar:
         #revisar esto
         if self.__usuario.insert(nombre, apellido, usuario, passw) == None:
             self.__vista.get_ventana().withdraw()
-            self.__vista_anterior.get_ventana().deiconify()
+            self.__controlador_anterior.get_vista().get_ventana().deiconify()

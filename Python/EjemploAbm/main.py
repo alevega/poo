@@ -6,9 +6,12 @@ Librerias usadas:
 Les dejo las librerias que baje y su documentacion.
 
 customtkinter: https://customtkinter.tomschimansky.com/documentation/
-    pip install customtkinter  
+    pip3 install customtkinter  
 CTkTable: https://github.com/Akascape/CTkTable
     pip install CTkTable
+
+dotenv
+    pip install python-dotenv
 '''
 
 Controlador_login()
